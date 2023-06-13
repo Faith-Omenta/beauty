@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 10px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav img {
+    width: 50px;
+}
+
+.nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: fuchsia;
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.category {
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-item,
+.beau {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-item img,
+.beau img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media Queries */
+
+/* Small devices (up to 767px) */
+@media (max-width: 767px) {
+    .container {
+        max-width: 80%;
+        padding: 10px;
+    }
+
+    .product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Medium devices (768px to 991px) */
+/* @media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .product {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Large devices (992px and above) */
+/* @media (min-width: 992px) {
+    .container {
+        max-width: 1200px;
+        padding: 20px;
+    }
+
+    .product {
+        grid-template-columns: repeat(4, 1fr);
+    }
+} */ 

@@ -1,0 +1,89 @@
+/* Reset some default styles */
+body, h1, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.nav a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav .icon {
+  margin: 0 5px;
+}
+
+.nav button {
+  margin: 0 10px;
+}
+
+/* Styles for the testimonials section */
+.Testimonials {
+  padding: 20px;
+}
+
+.head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.test1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.test1 .image {
+  flex: 0 0 100px;
+}
+
+.test1 .image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.test1 .icon {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.test1 .words {
+  flex: 1;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .nav {
+      flex-wrap: wrap;
+  }
+
+  .nav a {
+      margin: 5px;
+  }
+
+  .nav button {
+      margin: 5px;
+  }
+
+  .test1 {
+      flex-direction: column;
+  }
+}
+
+
+
+  
+
+
+
