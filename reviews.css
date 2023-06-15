@@ -1,87 +1,130 @@
-/* Reset some default styles */
-body, h1, p, img {
-  margin: 0;
-  padding: 0;
-}
-
-/* Styles for the navigation */
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #f2f2f2;
-}
-
-.nav a {
-  margin: 0 10px;
-  color: #333;
-  text-decoration: none;
-}
-
-.nav .icon {
-  margin: 0 5px;
-}
-
-.nav button {
-  margin: 0 10px;
-}
-
-/* Styles for the testimonials section */
-.Testimonials {
-  padding: 20px;
-}
-
-.head {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.test1 {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.test1 .image {
-  flex: 0 0 100px;
-}
-
-.test1 .image img {
-  width: 100%;
-  border-radius: 50%;
-}
-
-.test1 .icon {
-  display: flex;
-  align-items: center;
-  margin: 0 10px;
-}
-
-.test1 .words {
-  flex: 1;
-}
-
-/* Media queries for responsive design */
-@media screen and (max-width: 768px) {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
   .nav {
-      flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-
+  
   .nav a {
-      margin: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+    color: #333;
+  }
+  
+  .icon {
+    margin: 0 5px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
 
-  .nav button {
-      margin: 5px;
-  }
 
+.Testimonials {
+    max-width: 800px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    padding-top: 2%;
+   
+  }
+  .main{
+    display: flex;
+    /* gap: 10%;  */
+   width: 800px;
+    /* height: 40; */
+    margin-bottom:60px ;
+  }
+  
+  .head {
+    margin-bottom: 20px;
+  }
+  
+  .head h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  .words{
+    width: 100%;
+  }
+  
   .test1 {
-      flex-direction: column;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: auto-fit,minmax(270px,1fr);
+    box-shadow: 0px;
+    border-radius: 5px;
+    background-color: rgb(243, 240, 241);
+    text-align: center;
+    padding: 20px 20px;
+    /* animation: spin 7s linear infinite; */
+    padding-top: 15%;
+   
+   }
+  
+  .test1.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
   }
-}
-
-
+  
+  .image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .image p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  ion-icon {
+    font-size: 20px;
+    color: rgb(241,159,7);
+  }
+  
+   p {
+    font-size: 14px;
+    /* color: #777; */
+    line-height: 1.5;
+  }
+  
+  
+  /* @keyframes spin {
+    from {
+      transform: rotate(20deg);
+    }
+    to {
+      transform: rotate(30deg);
+    }
+  }
+ */
 
   
 
